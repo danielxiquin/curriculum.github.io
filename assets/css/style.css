@@ -270,6 +270,10 @@ h2{
         display: none;
         
     }
+    
+    .menu-icono{
+        width: 10px;
+    }
 
     .menu .navbar ul li a:hover{
         color: rgb(5, 4, 19);
