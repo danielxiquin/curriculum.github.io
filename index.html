@@ -3,9 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CURRICULUM VITAE</title>
 </head>
 <body>
-    <h1>Hola mundo</h1>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">Daniel</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="assets/img/menu.png" class="menu-icon" alt="menubox">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#section1">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#experiencia">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-content container" id="header">
+            <div class="header-txt">
+                <span>HOLA</span>
+                <H1>SOY DANIEL</H1>
+            </div>
+        </div>
+    </header>
+    
+    <section class="about container" id="section1">
+        <div class="about-img">
+            <img src="assets/img/perfilmio.jpg" alt="">
+        </div>
+        <div class="about-txt">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy estudiante de Ingenieria en Informtica y Sistemas,
+                una persona que busca abordar los desafios con creatividad,
+                me encanta buscar proyectar mi persona en lo que realizo y busco
+                marcar mi forma de ser en mis proyectos personales como en proyectos colaborativos.
+            </p>
+            <div class="butons">
+                <a href="#proyectos" class="btn-1">Proyectos</a>
+                <a href="#experiencia" class="btn-1">Experiencia</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="proyectos container" id="proyectos">
+        <h2>Proyectos</h2>
+
+        <div class="proyecto-content">
+            <div class="proyecto1">
+                <div class="proyectos-txt">
+                    <span>Proyecto 1</span>
+                    <h3>Reproductor</h3>
+                    <a href="https://github.com/Yipieight/Programacion_avanzada_CD"  target="_blank"class="btn-1">Dirijirse a repositorio</a>
+                </div>
+                <div class="proyecto-img">
+                    <img src="assets/img/P1.png" alt="">
+                </div>
+
+            </div>
+            <div class="proyecto1">
+                <div class="proyectos-txt">
+                    <span>Proyecto 2</span>
+                    <h3>Farmacia</h3>
+                    <a href="https://github.com/Yipieight/Programacion_avanzada_Farmacia" target="_blank" class="btn-1">Dirijirse a repositorio</a>
+                </div>
+                <div class="proyecto-img">
+                    <img src="assets/img/P2.png" alt="">
+                </div>
+
+            </div>
+            <div class="proyecto1">
+                <div class="proyectos-txt">
+                    <span>Proyecto 3</span>
+                    <h3>Conecta 4</h3>
+                    <a href="https://github.com/danielxiquin/PROYECTO-2" target="_blank"class="btn-1">Dirijirse a repositorio</a>
+                </div>
+                <div class="proyecto-img">
+                    <img src="assets/img/P3.png" alt="">
+                </div>
+
+            </div>
+            <div class="proyecto1">
+                <div class="proyectos-txt">
+                    <span>Proyecto 1</span>
+                    <h3>Reproductor</h3>
+                    <a href="https://github.com/danielxiquin/ENTREGA_-PROYECTO_1" target="_blank"class="btn-1">Dirijirse a repositorio</a>
+                </div>
+                <div class="proyecto-img">
+                    <img src="assets/img/P1.png" alt="">
+                </div>
+
+            </div>
+        </div>
+       
+    </main>
+
+    <section class="experiencia" id="experiencia">
+        <h2>Experiencia</h2>
+        <div class="experiencia-content" >
+            <div class="content-img"  onmouseover="mostrarPorcentaje(this, 15)">
+                <img src="assets/img/l1.png" alt="">
+                <div class="overlay">
+                    <div class="progress-bar"></div> 
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+            <div class="content-img"  onmouseover="mostrarPorcentaje(this, 50)">
+                <img src="assets/img/l2.png" alt="">
+                <div class="overlay">
+                    <div class="progress-bar" ></div> 
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+            <div class="content-img"  onmouseover="mostrarPorcentaje(this, 10)">
+                <img src="assets/img/l3.png" alt="">
+                <div class="overlay">
+                    <div class="progress-bar" ></div> 
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+            <div class="content-img"  onmouseover="mostrarPorcentaje(this, 5)">
+                <img src="assets/img/l4.png" alt="">
+                <div class="overlay">
+                    <div class="progress-bar" ></div> 
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+            <div class="content-img"  onmouseover="mostrarPorcentaje(this, 70)">
+                <img src="assets/img/l5.png" alt="">
+                <div class="overlay">
+                    <div class="progress-bar" ></div> 
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+            <div class="content-img"  onmouseover="mostrarPorcentaje(this, 20)">
+                <img src="assets/img/l6.png" alt="">
+
+                <div class="overlay">
+                    <div class="progress-bar"></div> 
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/codigo.js"></script>
+   
+
+
+    
+   
 </body>
 </html>

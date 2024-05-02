@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*
+  font-family: "Bebas Neue", sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background: rgb(2, 2, 17);
+    
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: fixed;
+    background: rgb(2, 2, 17);
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: rgb(163, 231, 231);
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: rgb(143, 233, 233);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    padding: 50px 0 0 0;
+}
+
+.header-content{
+    display: flex;
+    flex: 1;
+}
+.header-txt{
+    flex-basis: 50%;
+}
+
+.header-txt span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #B3B3B3;
+   
+}
+
+.header-txt h1{
+    font-size: 100px;
+    color: #fff;
+    line-height: 1;
+    font-family: "Bebas Neue", sans-serif;
+    margin: 10px 0 25px 0;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    background: linear-gradient(
+        90deg,
+        rgb(77, 222, 233),
+        rgb(83, 2, 129)
+    );
+    color: #fff;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+.about{
+    padding: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-img{
+    flex-basis: 40%;
+}
+
+.about-img img{
+    width: 359px;
+    border-radius: 15px;
+    border: 2px solid rgb(129, 255, 255);
+}
+
+.about-txt {
+    flex-basis: 60%;
+}
+
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.about-txt p{
+    color:#B3B3B3;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+.butons a {
+    margin-right: 15px;
+}
+
+.proyectos{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.proyecto-content{
+    margin-top: 70px;
+}
+
+.proyecto1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.proyectos-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.proyectos-txt span{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: rgb(143, 233, 233);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.proyectos-txt h3 {
+    color: #fff;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.proyecto-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+.experiencia{
+    padding: 50px 0 100px 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.experiencia-content{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    justify-content: center;
+    
+}
+
+.experiencia-content img{
+    width: 70px;
+    
+}
+
+.content-img{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    padding: 10px;
+    display: none;
+    border-radius: 50px;
+}
+.progress-bar {
+    height: 5px; 
+    background-color: #fff; 
+    width: 0; 
+    transition: width 0.3s ease; 
+}
+
+.content-img:hover .overlay{
+    display: block;
+}
+
+@media (max-width:800px){
+    .menu {
+        padding: 20px;
+
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(16, 39, 31);
+        display: none;
+        
+    }
+
+    .menu .navbar ul li a:hover{
+        color: rgb(5, 4, 19);
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+
+    #menu:checked ~.navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px 30px 30px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+
+    .about{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img{
+        text-align: center;
+    }
+
+    .about-img img{
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .butons a {
+        margin: 0 0 10px 0;
+    }
+
+    .proyectos{
+        padding: 30px;
+    }
+    .proyecto-content{
+        margin-top: 30px;
+    }
+
+    .proyecto1{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .proyectos-txt{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .proyecto-img{
+        order: 2;
+    }
+
+
+    .proyecto-img img{
+        width: 250px;
+    }
+
+
+    .experiencia{
+        padding: 0 30px 30px 30px;
+    }
+
+    .experiencia-content{
+        margin-top: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        align-items: center;
+        padding: 0 100px;
+    }
+}
