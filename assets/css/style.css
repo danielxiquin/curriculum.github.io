@@ -67,7 +67,7 @@ img {
     display: none;
 }
 
-.menu-icono{
+.menu-icon{
     width: 25px;
 }
 
@@ -271,10 +271,6 @@ h2{
         
     }
     
-    .menu-icono{
-        width: 10px;
-    }
-
     .menu .navbar ul li a:hover{
         color: rgb(5, 4, 19);
     }
