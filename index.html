@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <title>CURRICULUM VITAE</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="menu container">
             <a href="#" class="logo">Daniel</a>
             <input type="checkbox" id="menu"/>
@@ -20,11 +20,11 @@
                     <li><a href="#section1">Sobre mí</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#experiencia">Contacto</a></li>
+                    <li><a href="#Contacto">Información</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="header-content container" id="header">
+        <div class="header-content container" >
             <div class="header-txt">
                 <span>HOLA SOY</span>
                 <H1>XIQUIN CUMES OSCAR DANIEL</H1>
@@ -34,12 +34,12 @@
     
     <section class="about container" id="section1">
         <div class="about-img">
-            <img src="assets/img/perfilmio.jpg" alt="">
+            <img src="assets/img/perfil2.jpeg" alt="">
         </div>
         <div class="about-txt">
             <h2>Sobre mí</h2>
             <p>
-                Soy estudiante de Ingenieria en Informtica y Sistemas en la Univeridad Rafael landivar,
+                Soy estudiante de Ingenieria en Informtica y Sistemas en la Universidad Rafael Landivar,
                 me describo como una persona que busca abordar los desafios con creatividad,
                 me encanta buscar proyectar mi persona en lo que realizo y busco
                 marcar mi forma de ser en mis proyectos personales como en proyectos colaborativos.
@@ -67,14 +67,18 @@
 
             </div>
             <div class="proyecto1">
-                <div class="proyectos-txt">
-                    <span>Proyecto 2</span>
-                    <h3>Farmacia</h3>
-                    <a href="https://github.com/Yipieight/Programacion_avanzada_Farmacia" target="_blank" class="btn-1">Dirijirse a repositorio</a>
-                </div>
                 <div class="proyecto-img">
                     <img src="assets/img/P2.png" alt="">
                 </div>
+                <div class="proyectos-txt">
+                    <div class="proyectos-txtright">
+                        <span>Proyecto 2</span>
+                        <h3>Farmacia</h3>
+                        <a href="https://github.com/Yipieight/Programacion_avanzada_Farmacia" target="_blank" class="btn-1">Dirijirse a repositorio</a>
+                    </div>
+                    
+                </div>
+                
 
             </div>
             <div class="proyecto1">
@@ -89,14 +93,17 @@
 
             </div>
             <div class="proyecto1">
-                <div class="proyectos-txt">
-                    <span>Proyecto 4</span>
-                    <h3>Pagina escolar</h3>
-                    <a href="https://github.com/danielxiquin/pagina-web" target="_blank"class="btn-1">Dirijirse a repositorio</a>
-                </div>
                 <div class="proyecto-img">
                     <img src="assets/img/P4.png" alt="">
                 </div>
+                <div class="proyectos-txt">
+                    <div class="proyectos-txtright">
+                        <span>Proyecto 4</span>
+                        <h3>Pagina escolar</h3>
+                        <a href="https://github.com/danielxiquin/pagina-web" target="_blank"class="btn-1">Dirijirse a repositorio</a>
+                    </div>
+                </div>
+                
 
             </div>
         </div>
@@ -111,35 +118,35 @@
                 <img src="assets/img/l1.png" alt="">
                 <div class="overlay">
                     <div class="progress-bar"></div> 
-                    <span class="percentage">75%</span>
+                    <span class="percentage">15%</span>
                 </div>
             </div>
             <div class="content-img"  onmouseover="mostrarPorcentaje(this, 50)">
                 <img src="assets/img/l2.png" alt="">
                 <div class="overlay">
                     <div class="progress-bar" ></div> 
-                    <span class="percentage">75%</span>
+                    <span class="percentage">50%</span>
                 </div>
             </div>
             <div class="content-img"  onmouseover="mostrarPorcentaje(this, 5)">
                 <img src="assets/img/l3.png" alt="">
                 <div class="overlay">
                     <div class="progress-bar" ></div> 
-                    <span class="percentage">75%</span>
+                    <span class="percentage">5%</span>
                 </div>
             </div>
             <div class="content-img"  onmouseover="mostrarPorcentaje(this, 2)">
                 <img src="assets/img/l4.png" alt="">
                 <div class="overlay">
                     <div class="progress-bar" ></div> 
-                    <span class="percentage">75%</span>
+                    <span class="percentage">2%</span>
                 </div>
             </div>
             <div class="content-img"  onmouseover="mostrarPorcentaje(this, 70)">
                 <img src="assets/img/l5.png" alt="">
                 <div class="overlay">
                     <div class="progress-bar" ></div> 
-                    <span class="percentage">75%</span>
+                    <span class="percentage">70%</span>
                 </div>
             </div>
             <div class="content-img"  onmouseover="mostrarPorcentaje(this, 15)">
@@ -147,10 +154,56 @@
 
                 <div class="overlay">
                     <div class="progress-bar"></div> 
-                    <span class="percentage">75%</span>
+                    <span class="percentage">15%</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="Contacto" id="Contacto">
+        <h2>Información</h2>
+        <div class="contacto-content container">
+            <div class="infor">
+                <h3>Contacto</h3>
+                <div class="telefono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <a href="tel:+502">40245788</a>
+                </div>
+                <div class="telefono">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                    <a href="mailto:">danielxiquin802@gmail.com</a>
+                </div>
+            </div>
+            <div class="infor">
+                <h3>Educacion</h3>  
+                <ul>
+                    <li>Bachillerato<hr>
+                    <p>Liceo Integral San Pedrano 2018-2020</p>
+                    </li>
+                    <li>Diversificado <hr>
+                    <p>Centro Educativo Getsemani 2021-2022</p></li>
+                    <li>Universidad (en curso)<hr>
+                    <p>Universidad Rafael Landivar 2023-2024</p></li>
+                </ul>   
+            </div>
+            <div class="infor">
+                <h3>habilidades</h3>
+                <ul id="tipo">
+                    <li>Comunicacion afectiva</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Pensamiento critico</li>
+                    <li>Adaptabilidad</li>
+                    <li>Organización</li>
+                </ul>   
+            </div>
+            
+        </div>
+        
+        
     </section>
 
     <script src="assets/js/codigo.js"></script>
